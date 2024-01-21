@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AddEventListener </title>
+</head>
+
+<style>
+
+    h1 {
+        text-align: center;
+        color: black;
+        margin-left: -28px;
+        padding: 50px;
+        margin: 30px 10px 0px 10px;
+        font-size: 40px;
+        border: 1px solid black;
+    }
+
+    #btn {
+        position: absolute;
+        top: 50%;
+        background-color: #0a0a23;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        padding: 35px;
+        min-width: 200px;
+        margin-left: 300px;
+    }
+
+    #btn:hover {
+        background: repeating-linear-gradient(to right, purple, #0080FE, purple);  
+        transition: 0.10s;
+    }
+
+    #btnn {
+        position: absolute;
+        top: 50%;
+        background-color: #0a0a23;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        padding: 35px;
+        min-width: 200px;
+        margin-left: 550px;
+        
+    }
+
+    #btnn:hover {
+        background: repeating-linear-gradient(to right, purple, #0080FE, purple);  
+        transition: 0.10s;
+    }
+    
+    #btnnn {
+        position: absolute;
+        top: 50%;
+        background-color: #0a0a23;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        padding: 35px;
+        min-width: 200px;
+        margin-left: 800px;
+    }
+
+    #btnnn:hover {
+        background: repeating-linear-gradient(to right, purple, #0080FE, purple);  
+        transition: 0.10s;
+    }
+
+    body {
+        background: repeating-linear-gradient(to right, purple, #7F00FF, purple);
+    }
+    
+    
+</style>
+<body>
+    
+    <h1> Javascript addEventListener() Hands-On </h1>
+
+    <button id="btn"> Button 1</button>
+    <button id="btnn"> Button 2 </button>
+    <button id="btnnn"> Button 3 </button>
+
+    <script>
+
+        document.getElementById("btn").addEventListener("click", myFunction);
+        document.getElementById("btnn").addEventListener("click", myFunctionn);
+        document.getElementById("btnnn").addEventListener("click", myFunctionnn);
+
+        function myFunction() {
+            alert("Button 1 was clicked!");
+        }
+
+        function myFunctionn() {
+            alert("Button 2 was clicked!");
+        }
+
+        function myFunctionnn() {
+            alert("Button 3 was clicked!");
+
+        }
+
+    </script>
+
+</body>
+</html>
